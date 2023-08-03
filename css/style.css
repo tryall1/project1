@@ -1,0 +1,178 @@
+body {
+    background-color: white;
+    font-family: Roboto, sans-serif;
+    line-height: normal;
+}
+
+header {
+    background: #007765;
+}
+
+img.header__logo{
+    margin: 20px 0 20px 0;
+}
+
+.container {
+    width: 1100px;
+    margin:0 auto;
+}
+
+.container:not(:first-child) {
+    background-color:#EEEEEE;
+}
+
+.content-wrapper {
+    background-color:#EEEEEE;
+}
+
+.header__line {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0; /* Removes browser default margin */
+    padding: 0; /* Removes browser default padding */
+    display: flex; /* Arranges the items in a row */
+    justify-content: space-between; /* Adds equal space between each item */
+}
+
+.header__menu li {
+    display: inline-block; /* Each list item is displayed inline-block */
+    position: relative; /* Sets the positioning context for pseudo-elements */
+}
+
+.header__menu li:not(:last-child)::after {
+    content: ""; /* Empty content */
+    position: absolute; /* Absolute positioning relative to the li element */
+    top: 18%; /* Position from the top, adjust to center the line vertically */
+    bottom: 10%; /* Position from the bottom, adjust to center the line vertically */
+    width: 2px; /* Width of the line */
+    background: white; /* Color of the line */
+}
+
+.header__menu a {
+    text-decoration: none; /* Removes the default underline */
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 0 20px; /* Add padding to create space around the text and line */
+}
+
+.header__banner {
+    background-image: url("/img/banner.png");
+    height:403px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.header__banner .slogan {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.heading {
+    color: #007765;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+
+.container p {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.content-wrapper {
+    padding-top: 48px;
+}
+
+.content-wrapper:nth-of-type(4) {
+    background-color: #FFF;
+}
+
+.slogan_line {
+    background: url("/img/slogan-line.png") 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+i.motto {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    padding:110px;
+}
+
+img.logo {
+    width: 115px;
+    height: 115px;
+    float:left;
+    padding-right:48px;
+}
+
+.bio img{
+    width: 163px;
+    height: 163px;;
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.bio__person {
+    flex-basis: calc(33.33% - 88px); /* 33.33% for 3 items per line, 40px for left and right padding */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bio__person span {
+    color: #007765;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.bio__person i {
+    font-style: italic;
+}
+
+.bio-person img{
+    padding-bottom: 12px;
+}
+
+footer {
+    background-color: #333;
+    height: 176px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #FFF;
+    font-size:18px;
+    width: 540px;
+    text-align: center;
+}
