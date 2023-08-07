@@ -189,13 +189,53 @@ footer p {
 @media screen and (max-width:480px) {
     .heading {
         font-size:34px;
-        z-index: 1000;
+    }
+
+    .slogan {
+        font-size:2em;
     }
     .hero__message {
         font-size: 1.5em;
         line-height: 1.5em;
     }
+
     .container p {
         font-size: 1em;
+    }
+    .header__menu a {
+        font-size: 1.1em;
+    }
+    .header__menu {
+        display: none;
+    }
+    
+    .container {
+        padding: 0 25px 0 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container p {
+        font-size: 1em;
+    }
+
+    .header__banner .slogan {
+        font-size: 3em;
+    }
+
+    .header__banner {
+        height: 15em;
+    }
+
+    .container {
+        padding: 0 25px 0 25px;
+    }
+
+    .content-wrapper {
+        padding-bottom: 33px;
+    }
+
+    .bio {
+        display: block;
     }
 }
