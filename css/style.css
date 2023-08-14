@@ -239,3 +239,9 @@ footer p {
         display: block;
     }
 }
+
+@media screen and (max-width:900px) {
+    .header__menu a {
+        font-size: 1.1em;
+    }
+}
